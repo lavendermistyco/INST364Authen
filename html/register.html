@@ -4,17 +4,24 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,minimum-scale=1">
 		<title>Register</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="../style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
+
+
 	<body>
+		<!--  This is the register button class which deals with the user interaction for registering
+	        an account connected to XAMPP -->
 		<div class="register">
 			<h1>Register</h1>
+			<!-- Top division -->
 			<div class="links">
-				<a href="index.php">Login</a>
+				<a href="index.html">Login</a>
 				<a href="register.html" class="active">Register</a>
 			</div>
-			<form action="register.php" method="post" autocomplete="off">
+
+      <!-- The registration form --> 
+			<form action="phpFiles/register.php" method="post" autocomplete="off">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -34,7 +41,10 @@
 				<div class="msg"></div>
 				<input type="submit" value="Register">
 			</form>
+
 		</div>
+
+
 		<script>
 		var form = document.querySelector('.register form');
 		form.onsubmit = function(event) {

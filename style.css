@@ -8,6 +8,8 @@
 
 body {
   background-color: #435165;
+  background-image: url("images/main.gif");
+  background-size: cover;
   margin: 0;
 }
 
